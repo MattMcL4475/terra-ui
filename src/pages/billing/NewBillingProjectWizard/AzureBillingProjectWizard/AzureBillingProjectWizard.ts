@@ -39,7 +39,7 @@ export const AzureBillingProjectWizard = ({ onSuccess }: AzureBillingProjectWiza
   const [userEmails, setUserEmails] = useState({ emails: '', hasError: false });
   const [ownerEmails, setOwnerEmails] = useState({ emails: '', hasError: false });
   // undefined used to indicate that the user has not yet made a selection
-  const [addUsersOrOwners, setAddUsersOrOwners] = useState<boolean | undefined>(undefined);
+  const [addUsersOrOwners, setAddUsersOrOwners] = useState<boolean | undefined>(false);
   const [managedApp, setManagedApp] = useState<AzureManagedAppCoordinates>();
 
   const [existingProjectNames, setExistingProjectNames] = useState<string[]>([]);
